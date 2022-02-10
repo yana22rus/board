@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+            {% for item in items %}
+
+                <p><b>{{ item.name_add_comment }}</b></p>
+                <p>{{ item.comment }}</p>
+                <i>{{ item.time_comment }}</i>
+            {% endfor %}
+<form method="POST">
+    <p><input name="name_add_comment" placeholder="Ваш логин"></p>
+    <p><textarea name="comment"></textarea></p>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
